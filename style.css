@@ -87,6 +87,13 @@ hr {
   color: #888;
 }
 
+.section-note {
+  font-size: 13px;
+  color: #000;
+  margin: 4px 0 0;
+  line-height: 1.5;
+}
+
 /* Footer */
 .site-footer {
   margin-top: 20px;
