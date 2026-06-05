@@ -3,306 +3,125 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>IRON — Game Developer</title>
-  <meta name="description" content="IRON — indie game developer making games since 2018. Browse all projects including The Pull, Zapness, Planet Harvest and more." />
-  <meta property="og:title" content="IRON — Game Developer" />
-  <meta property="og:description" content="Indie game developer making games since 2018." />
-  <meta property="og:image" content="banner.png" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400&family=Prompt:wght@900&display=swap" rel="stylesheet" />
+  <title>IRON — game developer</title>
+  <meta name="description" content="IRON — indie game developer making games since 2018. Browse all projects." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Animated wave background -->
-  <div class="wave"></div>
-  <div class="wave"></div>
-  <div class="wave"></div>
+  <header class="site-header">
+    <div class="site-title">IRON</div>
+    <div class="site-meta">game developer &mdash; making games since 2018 &mdash; <a href="https://ironinblood.itch.io" target="_blank" rel="noopener">itch.io</a> &mdash; <a href="mailto:1pidro@proton.me">1pidro@proton.me</a></div>
+  </header>
 
-  <div id="wrapper">
+  <main>
 
-    <!-- Header -->
-    <header class="site-header">
-      <div class="banner-wrap">
-        <img src="banner.png" alt="IRON banner" class="banner-img" />
-      </div>
-      <div class="header-inner">
-        <h1 class="site-title">IRON</h1>
-        <p class="site-bio">Making games since 2018</p>
-        <div class="header-links">
-          <a href="https://ironinblood.itch.io" target="_blank" rel="noopener" id="link-itchio" class="btn-link">itch.io</a>
-          <a href="mailto:1pidro@proton.me" id="link-email" class="btn-link">Contact</a>
-          <details class="collab-details">
-            <summary>Collab / Publishing</summary>
-            <span>Email: <a href="mailto:1pidro@proton.me">1pidro@proton.me</a></span>
-          </details>
-        </div>
-      </div>
-    </header>
+    <div class="section-label">Featured</div>
+    <ul class="game-list">
+      <li>
+        <a href="https://ironinblood.itch.io/the-pull" target="_blank" rel="noopener" id="link-the-pull">The Pull lite</a>
+        <span class="game-desc">— multiplayer game, cursed statue with a magic hook</span>
+        <span class="game-tags">[Simulation · Win · Linux · Android]</span>
+      </li>
+      <li>
+        <a href="https://ironinblood.itch.io/zapness" target="_blank" rel="noopener" id="link-zapness">Zapness</a>
+        <span class="game-desc">— casual 2D 1v1 shooting game with portals</span>
+        <span class="game-tags">[Shooter · Browser · Win · Linux]</span>
+      </li>
+    </ul>
 
-    <main>
+    <div class="section-label">2026</div>
+    <ul class="game-list">
+      <li>
+        <a href="https://ironinblood.itch.io/flow-climb" target="_blank" rel="noopener" id="link-flow-climb">Flow Climb VR</a>
+        <span class="game-desc">— climb, slide and try to get as far as possible</span>
+        <span class="game-tags">[Win · Android]</span>
+      </li>
+    </ul>
 
-      <!-- Featured / All Games section -->
-      <section class="games-section" id="featured">
-        <h2 class="section-title">Games</h2>
-        <div class="game-grid">
+    <div class="section-label">2024</div>
+    <ul class="game-list">
+      <li>
+        <a href="https://ironinblood.itch.io/planetharvest" target="_blank" rel="noopener" id="link-planet-harvest">Planet Harvest</a>
+        <span class="game-desc">— platformer set in space with emphasis on gravity</span>
+        <span class="game-tags">[Simulation · Win · Linux · macOS]</span>
+      </li>
+    </ul>
 
-          <a href="https://ironinblood.itch.io/the-pull" target="_blank" rel="noopener" class="game-card" id="card-the-pull">
-            <div class="game-thumb">
-              <img src="https://img.itch.zone/aW1nLzIyOTI3NTgwLnBuZw==/315x250%23c/WyFOKT.png" alt="The Pull lite thumbnail" loading="lazy" />
-            </div>
-            <div class="game-info">
-              <div class="game-title">The Pull lite</div>
-              <div class="game-desc">A multiplayer game, where you play as a cursed statue with a magic hook</div>
-              <div class="game-tags">
-                <span class="tag tag-genre">Simulation</span>
-                <span class="tag tag-platform">Windows</span>
-                <span class="tag tag-platform">Linux</span>
-                <span class="tag tag-platform">Android</span>
-              </div>
-            </div>
-          </a>
+    <div class="section-label">2023</div>
+    <ul class="game-list">
+      <li>
+        <a href="https://ironinblood.itch.io/turnshoot" target="_blank" rel="noopener" id="link-turnshoot">turnshoot</a>
+        <span class="game-desc">— stuck in a warehouse with people trying to kill you</span>
+        <span class="game-tags">[Shooter · Browser]</span>
+      </li>
+    </ul>
 
-          <a href="https://ironinblood.itch.io/zapness" target="_blank" rel="noopener" class="game-card" id="card-zapness">
-            <div class="game-thumb">
-              <img src="https://img.itch.zone/aW1nLzIxOTQ2NzQzLmdpZg==/315x250%23c/KGAYeb.gif" alt="Zapness thumbnail" loading="lazy" />
-            </div>
-            <div class="game-info">
-              <div class="game-title">Zapness</div>
-              <div class="game-desc">Casual 2D 1v1 shooting game with portals</div>
-              <div class="game-tags">
-                <span class="tag tag-genre">Shooter</span>
-                <span class="tag tag-web">Play in browser</span>
-                <span class="tag tag-platform">Windows</span>
-                <span class="tag tag-platform">Linux</span>
-              </div>
-            </div>
-          </a>
+    <div class="section-label">Game Jams</div>
+    <ul class="game-list">
+      <li>
+        <a href="https://ironinblood.itch.io/toilet-papers-please" target="_blank" rel="noopener" id="link-toilet-papers">Toilet papers, please.</a>
+        <span class="game-desc">— cashier at a toilet dealing with rude people</span>
+        <span class="game-tags">[Visual Novel]</span>
+      </li>
+      <li>
+        <a href="https://ironinblood.itch.io/capypath" target="_blank" rel="noopener" id="link-capypath">Capypath</a>
+        <span class="game-desc">— hardcore survival game with capybaras</span>
+        <span class="game-tags">[Survival · Browser]</span>
+      </li>
+      <li>
+        <a href="https://ironinblood.itch.io/ilpulcino" target="_blank" rel="noopener" id="link-ilpulcino">Il Pulcino</a>
+        <span class="game-desc">— made by team 42720</span>
+        <span class="game-tags">[Adventure · Win]</span>
+      </li>
+      <li>
+        <a href="https://ironinblood.itch.io/the-bopl-one" target="_blank" rel="noopener" id="link-bopl-one">The bopl one</a>
+        <span class="game-desc">— 2D platformer where you shapeshift into objects</span>
+        <span class="game-tags">[Platformer · Browser · Win]</span>
+      </li>
+      <li>
+        <a href="https://ironinblood.itch.io/ship-overload" target="_blank" rel="noopener" id="link-ship-overload">Ship overload</a>
+        <span class="game-desc">— loading a ship over its capacity</span>
+        <span class="game-tags">[Puzzle · Browser]</span>
+      </li>
+      <li>
+        <a href="https://ironinblood.itch.io/bobot" target="_blank" rel="noopener" id="link-bobot">🤖 Bobot</a>
+        <span class="game-desc">— very unique tower defense game</span>
+        <span class="game-tags">[Puzzle · Browser · Win · Linux]</span>
+      </li>
+    </ul>
 
-        </div>
-      </section>
+    <div class="section-label">2019 / 2021</div>
+    <ul class="game-list">
+      <li>
+        <a href="https://ironinblood.itch.io/micnum" target="_blank" rel="noopener" id="link-micnum">Micnum</a>
+        <span class="game-desc">— draw the shape of the blob you play as</span>
+        <span class="game-tags">[Platformer · Browser · Win]</span>
+      </li>
+      <li>
+        <a href="https://ironinblood.itch.io/cookie-detective" target="_blank" rel="noopener" id="link-cookie-detective">🐱 Cookie Detective</a>
+        <span class="game-desc">— point and click about finding someone that wronged you</span>
+        <span class="game-tags">[Browser]</span>
+      </li>
+    </ul>
 
-      <!-- Year collections -->
-      <section class="year-section" id="year-2026">
-        <h2 class="year-title"><a href="https://itch.io/c/6787819/2026" target="_blank" rel="noopener">2026</a></h2>
-        <div class="game-grid">
-          <a href="https://ironinblood.itch.io/flow-climb" target="_blank" rel="noopener" class="game-card" id="card-flow-climb">
-            <div class="game-thumb">
-              <img src="https://img.itch.zone/aW1nLzI1MDYzNzI4LnBuZw==/315x250%23c/Rm0OiO.png" alt="Flow Climb VR thumbnail" loading="lazy" />
-            </div>
-            <div class="game-info">
-              <div class="game-title">Flow Climb VR</div>
-              <div class="game-desc">Climb, slide and try to get as far as possible</div>
-              <div class="game-tags">
-                <span class="tag tag-platform">Windows</span>
-                <span class="tag tag-platform">Android</span>
-              </div>
-            </div>
-          </a>
-        </div>
-      </section>
+    <div class="section-label">Tools</div>
+    <ul class="game-list">
+      <li>
+        <a href="https://ironinblood.itch.io/godot-svn-dock" target="_blank" rel="noopener" id="link-godot-svn">Godot SVN Dock</a>
+        <span class="game-desc">— SVN version control integration for Godot</span>
+        <span class="game-tags">[Win]</span>
+      </li>
+    </ul>
 
-      <section class="year-section" id="year-2024">
-        <h2 class="year-title"><a href="https://itch.io/c/5924289/2024" target="_blank" rel="noopener">2024</a></h2>
-        <div class="game-grid">
-          <a href="https://ironinblood.itch.io/planetharvest" target="_blank" rel="noopener" class="game-card" id="card-planet-harvest">
-            <div class="game-thumb">
-              <img src="https://img.itch.zone/aW1nLzIxOTQ3MTkyLmdpZg==/315x250%23c/mHCBfK.gif" alt="Planet Harvest thumbnail" loading="lazy" />
-            </div>
-            <div class="game-info">
-              <div class="game-title">Planet Harvest</div>
-              <div class="game-desc">Platformer set in space with emphasis on gravity.</div>
-              <div class="game-tags">
-                <span class="tag tag-genre">Simulation</span>
-                <span class="tag tag-platform">Windows</span>
-                <span class="tag tag-platform">Linux</span>
-                <span class="tag tag-platform">macOS</span>
-              </div>
-            </div>
-          </a>
-        </div>
-      </section>
+  </main>
 
-      <section class="year-section" id="year-2023">
-        <h2 class="year-title"><a href="https://itch.io/c/5924291/2023" target="_blank" rel="noopener">2023</a></h2>
-        <div class="game-grid">
-          <a href="https://ironinblood.itch.io/turnshoot" target="_blank" rel="noopener" class="game-card" id="card-turnshoot">
-            <div class="game-thumb">
-              <img src="https://img.itch.zone/aW1nLzExODE3MDk5LnBuZw==/315x250%23c/30%2BhSp.png" alt="turnshoot thumbnail" loading="lazy" />
-            </div>
-            <div class="game-info">
-              <div class="game-title">turnshoot</div>
-              <div class="game-desc">You're stuck in a warehouse with people trying to kill you.</div>
-              <div class="game-tags">
-                <span class="tag tag-genre">Shooter</span>
-                <span class="tag tag-web">Play in browser</span>
-              </div>
-            </div>
-          </a>
-        </div>
-      </section>
-
-      <section class="year-section" id="year-jams">
-        <h2 class="year-title"><a href="https://itch.io/c/4853081/game-jams" target="_blank" rel="noopener">Game Jams</a></h2>
-        <div class="game-grid">
-
-          <a href="https://ironinblood.itch.io/toilet-papers-please" target="_blank" rel="noopener" class="game-card" id="card-toilet-papers">
-            <div class="game-thumb">
-              <img src="https://img.itch.zone/aW1nLzEwNjg5NjgwLnBuZw==/315x250%23c/MmBclf.png" alt="Toilet papers, please. thumbnail" loading="lazy" />
-            </div>
-            <div class="game-info">
-              <div class="game-title">Toilet papers, please.</div>
-              <div class="game-desc">You work as a cashier at a toilet that deals with a lot of rude people</div>
-              <div class="game-tags">
-                <span class="tag tag-genre">Visual Novel</span>
-              </div>
-            </div>
-          </a>
-
-          <a href="https://ironinblood.itch.io/capypath" target="_blank" rel="noopener" class="game-card" id="card-capypath">
-            <div class="game-thumb">
-              <img src="https://img.itch.zone/aW1nLzkzNDYxOTUucG5n/315x250%23c/jjWlZh.png" alt="Capypath thumbnail" loading="lazy" />
-            </div>
-            <div class="game-info">
-              <div class="game-title">Capypath</div>
-              <div class="game-desc">Hardcore survival game with capybaras</div>
-              <div class="game-tags">
-                <span class="tag tag-genre">Survival</span>
-                <span class="tag tag-web">Play in browser</span>
-              </div>
-            </div>
-          </a>
-
-          <a href="https://ironinblood.itch.io/ilpulcino" target="_blank" rel="noopener" class="game-card" id="card-ilpulcino">
-            <div class="game-thumb">
-              <img src="https://img.itch.zone/aW1nLzIxODc5Mzk3LnBuZw==/315x250%23c/l%2Bwlij.png" alt="Il Pulcino thumbnail" loading="lazy" />
-            </div>
-            <div class="game-info">
-              <div class="game-title">Il Pulcino</div>
-              <div class="game-desc">Made by team 42720</div>
-              <div class="game-tags">
-                <span class="tag tag-genre">Adventure</span>
-                <span class="tag tag-platform">Windows</span>
-              </div>
-            </div>
-          </a>
-
-          <a href="https://ironinblood.itch.io/the-bopl-one" target="_blank" rel="noopener" class="game-card" id="card-bopl-one">
-            <div class="game-thumb">
-              <img src="https://img.itch.zone/aW1nLzIwMjg2ODg0LnBuZw==/315x250%23c/rYeuHC.png" alt="The bopl one thumbnail" loading="lazy" />
-            </div>
-            <div class="game-info">
-              <div class="game-title">The bopl one</div>
-              <div class="game-desc">2D platformer where you shapeshift into objects that you find</div>
-              <div class="game-tags">
-                <span class="tag tag-genre">Platformer</span>
-                <span class="tag tag-web">Play in browser</span>
-                <span class="tag tag-platform">Windows</span>
-              </div>
-            </div>
-          </a>
-
-          <a href="https://ironinblood.itch.io/ship-overload" target="_blank" rel="noopener" class="game-card" id="card-ship-overload">
-            <div class="game-thumb">
-              <img src="https://img.itch.zone/aW1nLzExNDkzMzc4LnBuZw==/315x250%23c/cEjEw0.png" alt="Ship overload thumbnail" loading="lazy" />
-            </div>
-            <div class="game-info">
-              <div class="game-title">Ship overload</div>
-              <div class="game-desc">You are loading a ship over its load capacity</div>
-              <div class="game-tags">
-                <span class="tag tag-genre">Puzzle</span>
-                <span class="tag tag-web">Play in browser</span>
-              </div>
-            </div>
-          </a>
-
-          <a href="https://ironinblood.itch.io/bobot" target="_blank" rel="noopener" class="game-card" id="card-bobot">
-            <div class="game-thumb">
-              <img src="https://img.itch.zone/aW1nLzEzMTYyMDE3LnBuZw==/315x250%23c/WftBSy.png" alt="Bobot thumbnail" loading="lazy" />
-            </div>
-            <div class="game-info">
-              <div class="game-title">🤖 Bobot</div>
-              <div class="game-desc">Very unique tower defense game</div>
-              <div class="game-tags">
-                <span class="tag tag-genre">Puzzle</span>
-                <span class="tag tag-web">Play in browser</span>
-                <span class="tag tag-platform">Windows</span>
-                <span class="tag tag-platform">Linux</span>
-              </div>
-            </div>
-          </a>
-
-        </div>
-      </section>
-
-      <section class="year-section" id="year-early">
-        <h2 class="year-title"><a href="https://itch.io/c/5924283/20192021" target="_blank" rel="noopener">2019 / 2021</a></h2>
-        <div class="game-grid">
-
-          <a href="https://ironinblood.itch.io/micnum" target="_blank" rel="noopener" class="game-card" id="card-micnum">
-            <div class="game-thumb">
-              <img src="https://img.itch.zone/aW1nLzk1ODM4MDcucG5n/315x250%23c/oATdxh.png" alt="Micnum thumbnail" loading="lazy" />
-            </div>
-            <div class="game-info">
-              <div class="game-title">Micnum</div>
-              <div class="game-desc">Draw the shape of the blob you play as</div>
-              <div class="game-tags">
-                <span class="tag tag-genre">Platformer</span>
-                <span class="tag tag-web">Play in browser</span>
-                <span class="tag tag-platform">Windows</span>
-              </div>
-            </div>
-          </a>
-
-          <a href="https://ironinblood.itch.io/cookie-detective" target="_blank" rel="noopener" class="game-card" id="card-cookie-detective">
-            <div class="game-thumb">
-              <img src="https://img.itch.zone/aW1nLzUwMjczNjMucG5n/315x250%23c/iRrWgD.png" alt="Cookie Detective thumbnail" loading="lazy" />
-            </div>
-            <div class="game-info">
-              <div class="game-title">🐱 Cookie Detective</div>
-              <div class="game-desc">Point and click game about finding a person that did something awful to you</div>
-              <div class="game-tags">
-                <span class="tag tag-web">Play in browser</span>
-              </div>
-            </div>
-          </a>
-
-        </div>
-      </section>
-
-      <section class="year-section" id="year-tools">
-        <h2 class="year-title"><a href="https://itch.io/c/6791262/tools" target="_blank" rel="noopener">Tools</a></h2>
-        <div class="game-grid">
-          <a href="https://ironinblood.itch.io/godot-svn-dock" target="_blank" rel="noopener" class="game-card" id="card-godot-svn">
-            <div class="game-thumb">
-              <img src="https://img.itch.zone/aW1nLzI0ODc1Mzg2LnBuZw==/315x250%23c/p8lsln.png" alt="Godot SVN Dock thumbnail" loading="lazy" />
-            </div>
-            <div class="game-info">
-              <div class="game-title">Godot SVN Dock</div>
-              <div class="game-desc">SVN version control integration for Godot</div>
-              <div class="game-tags">
-                <span class="tag tag-platform">Windows</span>
-              </div>
-            </div>
-          </a>
-        </div>
-      </section>
-
-    </main>
-
-    <footer class="site-footer">
-      <div class="footer-inner">
-        <a href="https://ironinblood.itch.io" target="_blank" rel="noopener">itch.io</a>
-        &nbsp;·&nbsp;
-        <a href="https://github.com/f3jry" target="_blank" rel="noopener">GitHub</a>
-        &nbsp;·&nbsp;
-        <a href="mailto:1pidro@proton.me">1pidro@proton.me</a>
-      </div>
-    </footer>
-
-  </div><!-- #wrapper -->
+  <footer class="site-footer">
+    <a href="https://ironinblood.itch.io" target="_blank" rel="noopener">itch.io</a> &nbsp;&middot;&nbsp;
+    <a href="https://github.com/f3jry" target="_blank" rel="noopener">github</a> &nbsp;&middot;&nbsp;
+    <a href="mailto:1pidro@proton.me">1pidro@proton.me</a>
+    &nbsp;&middot;&nbsp; collab &amp; Google Play publishing enquiries welcome
+  </footer>
 
 </body>
 </html>
