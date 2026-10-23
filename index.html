@@ -19,6 +19,11 @@
     <div class="section-label">Featured</div>
     <ul class="game-list">
       <li>
+        <a href="https://stretch-rotation-schemes-blond.trycloudflare.com/?server=1&amp;room=vbserver111" target="_blank" rel="noopener" id="link-voxel-breach">Voxel Breach</a>
+        <span class="game-desc">— multiplayer voxel shooter with a destructible city</span>
+        <span class="game-tags">[Shooter · Browser · Multiplayer]</span>
+      </li>
+      <li>
         <a href="https://ironinblood.itch.io/the-pull" target="_blank" rel="noopener" id="link-the-pull">The Pull lite</a>
         <span class="game-desc">— multiplayer game, cursed statue with a magic hook</span>
         <span class="game-tags">[Simulation · Win · Linux · Android]</span>
@@ -132,5 +137,18 @@
     &nbsp;&middot;&nbsp; collab &amp; Google Play publishing enquiries welcome
   </footer>
 
+  <script>
+    fetch('https://milujutipac.pythonanywhere.com/rooms', { cache: 'no-store' })
+      .then(response => response.json())
+      .then(({ rooms }) => {
+        const room = rooms.find(entry => entry.room === 'vbserver111');
+        if (!room || !room.relay.startsWith('wss://')) return;
+        const game = new URL(room.relay.replace(/^wss:/, 'https:'));
+        game.pathname = '/';
+        game.search = '?server=1&room=vbserver111';
+        document.getElementById('link-voxel-breach').href = game.href;
+      })
+      .catch(() => {});
+  </script>
 </body>
 </html>
